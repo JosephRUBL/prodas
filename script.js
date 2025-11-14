@@ -20,7 +20,7 @@ if (form) {
 }
 
 const scrollTopBtn = document.getElementById("scrollTopBtn");
-Window.onscroll = () => {
+window.onscroll = () => {
     if(document.documentElement.scrollTop > 200) {
         scrollTopBtn.style.display = "block";
     } else {
@@ -28,7 +28,7 @@ Window.onscroll = () => {
     }
 }
 
-scrollTopBtn.addEventListener('click', () => {
+scrollTopBtn.addEventListener("click", () => {
     window.scrollTo({top: 0, behavior: "smooth"});
 });
 
